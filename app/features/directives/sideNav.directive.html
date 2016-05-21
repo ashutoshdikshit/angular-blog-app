@@ -1,0 +1,5 @@
+<div class="col-md-12 sidebar slds-scrollable--y" ng-init="getBlogs()">
+  <ul class="nav nav-stacked">
+    <li ng-repeat="blog in blogs"><a href="#" ng-click="viewBlog(blog.id)">{{blog.title}}</a></li>
+  </ul>
+</div>

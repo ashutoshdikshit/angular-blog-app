@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+  <head>
+    <title>UI Blog </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-route.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngInfiniteScroll/1.2.2/ng-infinite-scroll.min.js"></script>
+    <script src="app.config.js"></script>
+    <script src="features/welcome/welcomeCtrl.js"></script>
+    <script src="features/viewAll/viewAllCtrl.js"></script>
+    <script src="features/editBlog/editBlogCtrl.js"></script>
+    <script src="features/viewBlog/viewBlogCtrl.js"></script>
+    <script src="features/directives/sideNav.directive.js"></script>
+
+    <script src="service.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <link rel="stylesheet" type="text/css" href="styles/salesforce-lightning-design-system.css">
+  </head>
+  <body>
+    <div >
+      <div class="slds-page-header" role="banner">
+        <div class="slds-media">
+          <div class="slds-media__figure">
+            <div class="site-log"></div><!--intentioanaly left blank-->
+          </div>
+          <div class="slds-media__body">
+            <p class="slds-page-header__title slds-truncate slds-align-middle slds-text-heading--large">UI Blog</p>
+            <ul class="nav navbar-nav">
+              <li class="push-left"><a href="#/welcome">Home <span class="sr-only"></span></a></li>
+              <li><a href="#/viewAll">All Blogs<span class="slds-badge slds-theme--inverse push-right">{{12}}</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid slds-m-top--large" ng-view></div>
+    </div>
+  </body>
+</html>

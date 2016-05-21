@@ -1,0 +1,24 @@
+<div ng-init="vm.getOneBlog()">
+  <div class="row">
+    <div class="col-md-2">
+      <side-nav></side-nav>
+    </div>
+    <div class="blog col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <span class="panel-title">{{vm.blog.title}}</span>
+          <button class="slds-button slds-button--neutral slds-not-selected edit-btn" aria-live="assertive" ng-click="vm.editBlog(blog.id)">
+            <span class="slds-text-not-selected">
+              <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit"></use>
+              </svg>Edit</span>
+          </button>
+          <p class="panel-sub-title"><strong>Created on :</strong> {{vm.blog.timestamp | date:'MM/dd/yyyy'}}</p>
+        </div>
+        <div class="panel-body">
+          {{vm.blog.text}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

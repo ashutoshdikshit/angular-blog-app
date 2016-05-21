@@ -1,0 +1,26 @@
+<div class="createBlog row" ng-init="vm.getBlogs()">
+  <div class="col-md-2">
+    <side-nav></side-nav>
+  </div>
+  <div class="col-md-6">
+    <div class="alert alert-success" role="alert" ng-show="vm.success">
+      Your blog has been saved <strong>successfully</strong>.
+    </div>
+    <div class="slds-form--stacked">
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="blogTitle">Title</label>
+        <div class="slds-form-element__control">
+          <input id="blogTitle" class="slds-input" type="text" placeholder="Blog Title" ng-model = "vm.title"/>
+        </div>
+      </div>
+      <div class="slds-form-element">
+        <label class="slds-form-element__label" for="blogText">Text</label>
+        <div class="slds-form-element__control">
+          <textarea id="blogText" class="slds-textarea" placeholder="Write your blog here" ng-model="vm.text"></textarea>
+        </div>
+      </div>
+      <button class="slds-button slds-button--neutral" ng-click="vm.saveBlog()">Save Blog</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+}
+.completed-true {
+  text-decoration: line-through;
+  opacity: .3;
+}
+
+footer {
+  background-color: #CCC;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: auto;
+}
+
+.blog .blogID {
+  float: left;
+  color: #888;
+  width: 50%;
+}
+
+.blog .blogTime {
+  float: right;
+  color: #888;
+  width: 50%;
+}
+
+.blog .blogText {
+  font-size: 30px;
+  text-align: justify;
+  margin-top: 10%;
+}
+
+.customHeight {
+  height: 250px !important;
+}
+
+.nav-li {
+  width: 100%;
+}
+
+.badge {
+  margin-left: 10px;
+}
+
+.search {
+  width: 40%;
+  float: right;
+  margin-top: 20px;
+}
+
+.all-blogs {
+  width: 20%;
+  float: left;
+}
+
+.custom-sidebar {
+  overflow-y: scroll;
+  position: fixed;
+  top: 95px;
+  left: 10px;
+  width: 212px;
+  bottom: 0px;
+}
+
+.site-logo {
+  width: 3.9375rem;
+  height: 2.75rem;
+  text-indent: -9999em;
+  background: url(../assets/icons/logo.svg) no-repeat;
+}
+
+.push-left {
+  margin-left: -15px;
+}
+
+.clear {
+  clear: both;
+}
+
+.timeline {
+  padding-top: 20px;
+}
+
+.push-right {
+  margin-left: 10px;
+}
+
+.sidebar {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+#blogText {
+  min-height: 400px;
+}
+
+.timeline-ul li {
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.panel-title {
+  font-size: 20px;
+}
+
+.panel-heading .edit-btn {
+  float: right;
+}
+
+.panel-sub-title {
+  margin-top: 5px;
+}
+
+#blogText {
+  min-height: 300px;
+}
+
+.panel-heading {
+  overflow: hidden;
+}
